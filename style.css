@@ -168,6 +168,7 @@ margin: auto;
 }
 
 /* About */
+
 .about_femajors{
   display: flex;
   justify-content: space-between;
@@ -229,12 +230,19 @@ margin: auto;
   color: var(--color-dark-grey);
 }
 
+#about {
+  background-color: var(--color-yellow);
+}
+
 .job {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .job_descripton {
+  display: center;
+  justify-content: center;
   margin: 0 16px;
   text-align: left;
 }
@@ -252,6 +260,9 @@ margin: auto;
   font-size: var(--font-micro);
 }
 
+#experience {
+  background-color: var(--color-white);
+}
 /* Skill */
 
 #skills {
