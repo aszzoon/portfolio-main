@@ -99,7 +99,7 @@ p {
   justify-content: space-between;
   background-color: var(--color-pink);
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-grey);
   padding: 15px;
 }
 
@@ -129,9 +129,10 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/background1.png") center/cover no-repeat;
+  background: url("imgs/background.jpeg") center/cover no-repeat;
   padding: 40px;
   text-align: center;
+	-webkit-text-stroke: px gray;
 }
 
 .home_avatar {
@@ -143,7 +144,7 @@ p {
 
 .home_title,
 .home_discripton{
-  color: var(--color-white)
+  color: var(--color-pink)
 }
 
 .home_contact {
@@ -173,6 +174,7 @@ margin: auto;
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
+  padding: auto;
   color: var(--color-black);
 }
 
@@ -197,7 +199,7 @@ margin: auto;
 }
 
 .femajor_title, .major_description {
-  color: var(--color-dark-grey);
+  color: var(--color-pink);
 }
 
  .about_bemajors{
@@ -231,25 +233,68 @@ margin: auto;
 }
 
 #about {
-  background-color: var(--color-yellow);
+  background-color: var(--color-grey);
 }
 
-.job {
+.job_1 {
+  padding: 25px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.job_descripton {
+.job_2 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job_3 {
+  padding : 25px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job_4 {
+  padding : 35px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainning_1 {
+  padding : 35px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainning_2 {
+  padding : 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.job_discription {
   display: center;
   justify-content: center;
+  padding: 5px;
   margin: 0 16px;
   text-align: left;
 }
 
 .job_name,
 .job_period {
-  color: var(--color-light-grey)
+  color: var(--color-grey)
 }
 
 .job_name {
@@ -261,8 +306,21 @@ margin: auto;
 }
 
 #experience {
-  background-color: var(--color-white);
+  background-color: var(--color-dark-grey);
 }
+
+/* Experience */
+#experience {
+  background-color: var(white);
+}
+.univ  { width: 100px; }
+.navy  { width: 250px; } 
+.hotel  { width: 100px; }
+.superbly { width : 200px; } 
+.himedia { width: 290px; }
+.ezen { width: 180px; }
+
+
 /* Skill */
 
 #skills {
@@ -272,7 +330,7 @@ margin: auto;
 .skillset {
   display: flex;
   background-color: var(--color-pink);
-  color: black
+  color: black;
   margin: 20px 40px;
 }
 
