@@ -20,7 +20,19 @@ navbarMenu.addEventListener("click", event => {
     return;
   }
 
+  scrollIntoView(link);
   console.log(event.target.dataset.link);
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({ behavior: "smooth" });
 });
+
+// handle click on "좋아요"
+const homeContactBtn = document.querySelector(".home_contact");
+homeContactBtn.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
