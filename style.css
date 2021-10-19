@@ -7,9 +7,9 @@
   --color-dark-white: #bdbdbd;
   --color-pink: hsl(350, 100%, 88%);
   --color-dark-pink: #ff6863;
-  --color-dark-grey: #f8baba;
-  --color-grey: #616161;
-  --color-light-grey: #7c7979;
+  --color-dark-gray: #f8baba;
+  --color-gray: #616161;
+  --color-light-gray: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -42,7 +42,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-grey);
+  color: var(--color-gray);
 }
 
 ul {
@@ -94,29 +94,36 @@ p {
 /* Navbar */
 #navbar {
   position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-pink);
   align-items: center;
   color: transparent;
+  width: 100%;
   padding: 15px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-orange);
+  padding: 8px;
+}
+
+.navbar_logo {
+  font-size: var(--font-dedium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-gray);
 }
 
 .navbar_menu {
   display: flex;
 }
 
-.navbar_logo {
-  font-size: var(--font-dedium);
-  font-weight: var(--weight-semi-bold);
-  color: var(--color-grey);
-}
-
 .navbar_menu_item {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  color: var(--color-gray);
 }
 
 .navbar__menu__item.active {
@@ -124,7 +131,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 .navbar_menu_item:hover {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-gray);
   border-radius: 4px;
 }
 
@@ -132,6 +139,7 @@ p {
 #home {
   background: url("imgs/background.jpeg") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
   -webkit-text-stroke: px gray;
 }
@@ -232,11 +240,11 @@ p {
 
 .bemajor_title,
 .major_description {
-  color: var(--color-dark-grey);
+  color: var(--color-dark-gray);
 }
 
 #about {
-  background-color: var(--color-grey);
+  background-color: var(--color-light-white);
 }
 
 .job_1 {
@@ -296,7 +304,7 @@ p {
 
 .job_name,
 .job_period {
-  color: var(--color-grey);
+  color: var(--color-gray);
 }
 
 .job_name {
@@ -308,7 +316,7 @@ p {
 }
 
 #experience {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-white);
 }
 
 /* Experience */
@@ -369,7 +377,7 @@ p {
 .skill_bar {
   width: 100%;
   height: 3px;
-  background-color: var(--color-grey);
+  background-color: var(--color-gray);
 }
 
 .skillset_right {
